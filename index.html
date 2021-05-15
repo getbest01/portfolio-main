@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>About Jason Lee</title>
   </head>
   <body>
@@ -28,39 +32,155 @@
         <div class="aboutMe-wrap">
           <p>About me</p>
           <ul class="aboutMe-list">
-            <li>What I can do</li>
+            <li>Who am I?</li>
             <ul>
-              <li>Develop and maintain website or web app.</li>
+              <li>Name: Kyujeong Lee. Called as Jason.</li>
+              <li>Location: Toronto, Ontario, Canada</li>
+            </ul>
+
+            <li>What skills I have</li>
+            <ul>
+              <li>Front-end: HTML, CSS, Javascript, React</li>
+              <li>Back-end: node.js</li>
+              <li>Database: PostgreSQL, MS-Access</li>
               <li>Tool: Visual Studio Code</li>
             </ul>
-            <li>Certified accountant</li>
+
+            <li>What I am</li>
+            <ul>
+              <li>Problem solver</li>
+              <li>Curiocity</li>
+              <li>Database: PostgreSQL, MS-Access</li>
+              <li>Tool: Visual Studio Code</li>
+            </ul>
+
+            <li>Contact</li>
+            <ul>
+              <li>
+                email: <a href="mailto:getbest@gmail.com">getbest@gmail.com</a>
+              </li>
+              <li>Cell Phone: 416-569-6241</li>
+            </ul>
           </ul>
         </div>
+
         <div class="portfolio-wrap">
           <p>Portfolios</p>
-          <ul class="portfolio-list">
-            <li>
-              <a
-                href="https://jason-portfolio-fiscaltrace.netlify.app/"
-                target="_blank"
-                ><img class="portfolio-img" src="images/portfolio-fiscal.png"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://jason-portfolio-currweather.netlify.app/"
-                target="_blank"
-                ><img class="portfolio-img" src="images/portfolio-weather.png"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://jason-portfolio-pgatour.netlify.app/"
-                target="_blank"
-                ><img class="portfolio-img" src="images/portfolio-pgatour.png"
-              /></a>
-            </li>
-          </ul>
+          <table class="portfolio-table">
+            <thead>
+              <tr>
+                <th>name</th>
+                <th>description</th>
+                <th>link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Main Page</td>
+                <td>
+                  <ul>
+                    <li>Front-end: HTML, CSS, Javascript on Netlify</li>
+                    <li>Portfolio main page</li>
+                    <li>
+                      <a
+                        href="https://github.com/getbest01/portfolio-main"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Fiscal Trace</td>
+                <td>
+                  <ul>
+                    <li>Front-end: HTML, CSS, Javascript, React on Netlify</li>
+                    <li>Back-end: node.js, PostgreSQL on Heroku</li>
+                    <li>CRUD web app by tweaking todo list</li>
+                    <li>
+                      <a
+                        href="https://github.com/getbest01/portfolio_fiscal_trace"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <a
+                    href="https://jason-portfolio-fiscaltrace.netlify.app/"
+                    target="_blank"
+                    ><img
+                      class="portfolio-img"
+                      src="images/portfolio-fiscal.png"
+                  /></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Weather</td>
+                <td>
+                  <ul>
+                    <li>Front-end: HTML, CSS, Javascript, React on Netlify</li>
+                    <li>Back-end: node.js on Heroku</li>
+                    <li>3rd party API: https://www.weatherapi.com/</li>
+                    <li>
+                      Weather (current/ 3 day forecast) information -
+                      current/daily/hourly
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/getbest01/portfolio_weather_React"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <a
+                    href="https://jason-portfolio-currweather.netlify.app/"
+                    target="_blank"
+                    ><img
+                      class="portfolio-img"
+                      src="images/portfolio-weather.png"
+                  /></a>
+                </td>
+              </tr>
+              <tr>
+                <td>PGA Tour</td>
+                <td>
+                  <ul>
+                    <li>Front-end: HTML, CSS, Javascript, React on Netlify</li>
+                    <li>Back-end: node.js on Heroku</li>
+                    <li>3rd party API: https://sportsdata.io/</li>
+                    <li>
+                      PGA golf current year tour schedule / leaderboard / news
+                      information
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/getbest01/portfolio_pgatour"
+                        target="_blank"
+                        >Github</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <a
+                    href="https://jason-portfolio-pgatour.netlify.app/"
+                    target="_blank"
+                    ><img
+                      class="portfolio-img"
+                      src="images/portfolio-pgatour.png"
+                  /></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
