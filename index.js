@@ -19,9 +19,9 @@ function curtainFn() {
     myCloseSound.play();
     document.querySelector(".left-panel").style.transform = "";
     document.querySelector(".right-panel").style.transform = "";
-    document.querySelector(".curtain").style.overflow = "hidden";
     document.querySelector(".right-panel").style.width = "50%";
     document.querySelector(".left-panel").style.width = "50%";
+    document.querySelector(".curtain").style.overflow = "hidden";
     shown = false;
     buttonText.textContent = "CHECK IT OUT!";
   }
