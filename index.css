@@ -23,17 +23,24 @@ body {
 .right-panel {
   width: 50%;
   height: 100vh;
-  float: left;
+
   z-index: 2;
   position: relative;
   background-image: url(./images/background_1_landscape_medium.jpg);
   transition: all 1s ease-in;
   font-size: 2.5rem;
+  overflow: hidden;
 }
 
 .left-panel {
   text-align: right;
+  float: left;
 }
+
+.right-panel {
+  float: right;
+}
+
 .content {
   position: relative;
   width: 100%;
