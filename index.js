@@ -2,29 +2,41 @@ let shown = false;
 let myOpenSound = new sound("./sound/curtain_open.ogg");
 let myCloseSound = new sound("./sound/curtain_close.ogg");
 let buttonText = document.querySelector(".curtainBtn");
+let leftPanel = document.querySelector(".left-panel");
+let rightPanel = document.querySelector(".right-panel");
+let curtainObj = document.querySelector(".curtain");
 
 function curtainFn() {
+  console.log(shown);
   if (!shown) {
     myOpenSound.stop();
     myOpenSound.play();
-    document.querySelector(".left-panel").style.transform = "translateX(-100%)";
-    document.querySelector(".right-panel").style.transform = "translateX(100%)";
-    document.querySelector(".right-panel").style.width = "1px";
-    document.querySelector(".left-panel").style.width = "1px";
-    document.querySelector(".curtain").style.overflow = "auto";
+    leftPanel.style = "transform:translateX(-100%)";
+    rightPanel.style = "transform:translateX(100%)";
+    setTimeout(curtainHide, 1000);
+    curtainObj.style.overflow = "auto";
     shown = true;
     buttonText.textContent = "CLOSE IT OUT!";
   } else {
     myCloseSound.stop();
     myCloseSound.play();
-    document.querySelector(".left-panel").style.transform = "";
-    document.querySelector(".right-panel").style.transform = "";
-    document.querySelector(".right-panel").style.width = "50%";
-    document.querySelector(".left-panel").style.width = "50%";
-    document.querySelector(".curtain").style.overflow = "hidden";
+    leftPanel.style.width = "50%";
+    rightPanel.style.width = "50%";
+    rightPanel.style.display = "block";
+    setTimeout(curtainClose, 700);
     shown = false;
     buttonText.textContent = "CHECK IT OUT!";
+    curtainObj.style.overflow = "hidden";
   }
+}
+
+function curtainHide() {
+  rightPanel.style.display = "none";
+}
+
+function curtainClose() {
+  leftPanel.style.transform = "";
+  rightPanel.style.transform = "";
 }
 
 //define soundsource

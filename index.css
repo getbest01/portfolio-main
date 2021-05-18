@@ -27,8 +27,11 @@ body {
   position: relative;
   background-image: url(./images/background_1_landscape_medium.jpg);
   transition: all 1s ease-in;
-  font-size: 2.5rem;
-  overflow: hidden;
+  font-size: 2rem;
+}
+
+.left-panel-text {
+  position: relative;
 }
 
 .left-panel {
