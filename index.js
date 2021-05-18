@@ -9,6 +9,7 @@ function curtainFn() {
     myOpenSound.play();
     document.querySelector(".left-panel").style.transform = "translateX(-100%)";
     document.querySelector(".right-panel").style.transform = "translateX(100%)";
+    document.querySelector(".curtain").style.overflow = "auto";
     shown = true;
     buttonText.textContent = "CLOSE IT OUT!";
   } else {
@@ -16,6 +17,7 @@ function curtainFn() {
     myCloseSound.play();
     document.querySelector(".left-panel").style.transform = "";
     document.querySelector(".right-panel").style.transform = "";
+    document.querySelector(".curtain").style.overflow = "hidden";
     shown = false;
     buttonText.textContent = "CHECK IT OUT!";
   }
