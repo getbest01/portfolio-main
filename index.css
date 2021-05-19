@@ -76,18 +76,28 @@ body {
 }
 
 .portfolio-wrap {
-  width: 500px;
+  width: 700px;
   margin: 0;
   padding: 0;
+}
+
+.portfolio-name {
+  width: 10%;
+}
+
+.portfolio-desc {
+  width: 60%;
+}
+
+.portfolio-link {
+  width: 30%;
 }
 
 td,
 th {
   border: 0.5px solid #ebebeb;
-  margin: auto;
-  padding: auto;
-  width: auto;
-  height: auto;
+  margin: 2px 0 2px 0;
+  padding: 2px 0 2px 0;
 }
 
 th {
@@ -96,11 +106,8 @@ th {
   color: white;
 }
 
-tr,
-thead,
-tbody {
-  margin: auto;
-  padding: auto;
+td {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .portfolio-table,
@@ -109,18 +116,14 @@ tbody {
   margin: 0 auto 0 0;
 }
 
+.portfolio-list,
+.aboutMe-list {
+  margin: 3px;
+}
+
 .portfolio-img {
+  display: block;
   position: relative;
-  width: 100px;
-  height: 100px;
+  max-width: 100%;
+  margin: 1px;
 }
-
-/*
-.left-panel:hover {
-  transform: translateX(-100%);
-}
-
-.right-panel:hover {
-  transform: translateX(100%);
-}
-*/
