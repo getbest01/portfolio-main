@@ -1,6 +1,6 @@
 let shown = false;
-let myOpenSound = new sound("./sound/curtain_open.ogg");
-let myCloseSound = new sound("./sound/curtain_close.ogg");
+let myOpenSound = new sound("./sound/curtain_open.mp3");
+let myCloseSound = new sound("./sound/curtain_close.mp3");
 let buttonText = document.querySelector(".curtainBtn");
 let leftPanel = document.querySelector(".left-panel");
 let rightPanel = document.querySelector(".right-panel");
