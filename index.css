@@ -127,3 +127,7 @@ td {
   max-width: 100%;
   margin: 1px;
 }
+
+.q-section {
+  font-weight: 600;
+}
